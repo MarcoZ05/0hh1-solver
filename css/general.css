@@ -1,0 +1,22 @@
+/* center game */
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color-1);
+}
+/* transition */
+*{
+    transition: 150ms;
+}
+/* gameContainer */
+#gameContainer{
+    width: 90vmin;
+    height: 90vmin;
+    padding: calc(10vmin / var(--size));
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    background-color: var(--bg-color-2);
+    border-radius: var(--cell-radius);
+}

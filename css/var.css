@@ -1,0 +1,13 @@
+/* css variables */
+:root{
+    --s-color: rgba(0, 0, 0, 0.25);
+    --c-color-1: hsl(0, 0%, 30%);
+    --c-color-2: hsl(0, 0%, 20%);
+    --p-color-1: hsl(60, 100%, 50%);
+    --p-color-1: hsl(60, 100%, 50%);
+    --p-color-2: hsl(30, 100%, 50%);
+    --p-color-2: hsl(30, 100%, 50%);
+    --bg-color-1: hsl(0, 0%, 10%);
+    --bg-color-2: hsl(0, 0%, 15%);
+    --cell-radius: 10px;
+}
