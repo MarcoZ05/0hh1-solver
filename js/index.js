@@ -2,12 +2,12 @@ import createField from "./createField.js";
 import displayField from "./displayField.js";
 import solveField from "./solveField.js";
 
-// init essential variables in js and css
+// init essential variables
 const gameContainer = document.getElementById("gameContainer");
-const size = 12;
-document.body.setAttribute("style", `--size: ${size};`);
+const size = 4;
 
 // create and display field
+document.body.setAttribute("style", `--size: ${size};`);
 var field = createField(size);
 field = displayField(field, gameContainer);
 
@@ -33,9 +33,11 @@ const sizeButtons = [
   document.getElementById("10"),
   document.getElementById("12"),
 ];
-sizeButtons.forEach((sizeButton)=>{
-  sizeButton.addEventListener("click", (e)=>{
-    const size = e.target
-    console.log(size);
-  })
-})
+sizeButtons.forEach((sizeButton) => {
+  sizeButton.addEventListener("click", (e) => {
+    const size = e.target.id;
+    document.body.setAttribute("style", `--size: ${size};`);
+    field = createField(size);
+    field = displayField(field, gameContainer);
+  });
+});
