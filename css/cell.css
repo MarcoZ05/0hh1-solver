@@ -14,11 +14,3 @@
     margin: calc(5vmin / var(--size));
     border-radius: var(--cell-radius);
 }
-.cell:hover::after{
-    content: "";
-    display: block;
-    position: relative;
-    width: calc(80vmin / var(--size));
-    height: calc(80vmin / var(--size));
-    background-color: var(--s-color);
-}

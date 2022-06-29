@@ -23,6 +23,7 @@ export default function identicLine(field) {
         field[i1].foreach((field1, j) => {
           if (field1 === 0) {
             field1 = field[i2][j];
+            console.log(field1);
           }
         });
       }
