@@ -25,5 +25,17 @@ solveButton.addEventListener("click", () => {
   field = displayField(field, gameContainer);
 });
 
-// solve field
-// solvedField = solveField(field);
+// siive buttons
+const sizeButtons = [
+  document.getElementById("4"),
+  document.getElementById("6"),
+  document.getElementById("8"),
+  document.getElementById("10"),
+  document.getElementById("12"),
+];
+sizeButtons.forEach((sizeButton)=>{
+  sizeButton.addEventListener("click", (e)=>{
+    const size = e.target
+    console.log(size);
+  })
+})
